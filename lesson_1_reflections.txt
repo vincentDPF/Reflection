@@ -1,0 +1,36 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    we can find our mistake quickly when the new version run and get us a bug.Especially the file is too long to know when the mistake is.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    Fill in your answer here
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    自动保存有利于防止程序员由于太投入编程或健忘的原因而导致忘记提交更改，但有时候也会将一些小的更改保存导致文件提交过频，而且不同版本之间的差异可能相对较小导致需要查看差异时会浪费较多的时间。
+    手动保存则方便程序员按照自己的逻辑顺序将一些重要的更改或逻辑独立的更改保存，方便查阅和尽量较少提交次数。但也会导致部分程序员由于健忘而导致忘记提交的情况发生
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    因为Git系统主要针对程序文本，一个仓库内的文件相互关联，对其中一个文件做出更改，如果没有对关联文件的相应地方做出相应的提交很有可能就会导致程序运行出现bug，所以一般需要同时对一个仓库内的文件做出更改和提交，同时这样也可以较少分开提交次数，节省时间。
+    而类似于Google Docs由于一般针对的是文本文件，即使其中一个文件更改，一般也并不会影响别的文件的运行。
+
+How can you use the commands git log and git diff to view the history of files?
+
+    先通过git clone url来克隆版本库，然后通过cd进入版本库后使用git log查看各个版本的commit id和描述，通过git diff命令来对比两个commit id所代表的的版本之间的更改详情。
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    因为即使更改出现bug也可以通过回顾各项更改前的commit以找出出现该bug的commit id
+    并通过diff command对比最新尚未出现bug的commit以找出可能导致bug出现的更改
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    尝试对程序文本进行更改并提交
