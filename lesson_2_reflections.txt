@@ -1,0 +1,20 @@
+What happens when you initialize a repository? Why do you need to do it?
+creat a hidden directory which named '.git', cause we need to track the directroy as a git repository
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+staging area 是一个临时存储即将commit的文件的地方，不能用于长时间存储文件，而且其并不会以directory的形式存在并显示。它的价值在于可以使创建者可以将文件按照逻辑性进行分类分次commit，不会导致一次大量commit后却不清楚commit message该写什么而导致版本更改信息不明确。
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+How do the diagrams help you visualize the branch structure?
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+What are the pros and cons of Git's automatic merging vs. always doing merges
+manually?
