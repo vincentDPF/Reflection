@@ -7,14 +7,15 @@ staging area 是一个临时存储即将commit的文件的地方，不能用于�
 
 How can you use the staging area to make sure you have one commit per logical
 change?
-
+先将每项逻辑性更改通过git add ‘per logical change’添加至staging area中，然后再通过git commit 提交每项逻辑性更改
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
-
+当我们需要进行一些实验性版本的时候，branches可以帮助我们建立一个新的但内容与之前版本一样的commit，使得我们可以在该branch中任意修改而不影响原来版本的内容
 How do the diagrams help you visualize the branch structure?
-
+因为branch structure并非一个直线型结构，而更像一个不可逆的向量树状图，所以用diagram展示branch structure可以更直观地显示branch的结构特点，方便解释reachability
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
-
+形成一个拥有被合并的两个branch的commit的new tip of branch。因为这样更方便理解merge command的运行方式和结果
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+自动合并可以更快速地完成合并任务，但无法处理合并冲突，手动合并则是可以根据需求自行合并文件内容，能尽量避免和处理合并冲突，但逐一合并又会过于浪费时间
