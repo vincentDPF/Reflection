@@ -1,6 +1,6 @@
 When would you want to use a remote repository rather than keeping all your work
 local?
-    
+    当我需要通过remote与别人合作开展或完成项目的时候，或者自己需要在不同电脑上操作同一repository时
 
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
